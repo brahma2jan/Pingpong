@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset=utf-8>
+	<title>PingPong</title>
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+	<section id="controls">
+		<div id="scoreDetail">
+			<div id="playerA"><p>Player: A</p></div>
+			<div id="winDetail"><p>Commentary</p></div>
+			<div id="playerB"><p>Player: B</p></div>
+		</div>
+
+		<div id="playControl">
+			<div id="scoreA"><p>0</p></div>
+			<input type="button" id="play" value="Play"></input>
+			<input type="button" id="pause" value="Pause"></input>
+			<input type="button" id="resume" value="Resume"></input>
+			<input type="button" id="reset" value="Reset"></input>
+			<select id="levels" onchange="selectedLevel()">
+				<option id="level1" selected="selected"><p>Level 1</p></option>
+				<option id="level2"><p>Level 2</p></option>
+				<option id="level3"><p>Level 3</p></option>
+			</select>
+			<div id="scoreB"><p>0</p></div>
+		</div>
+	</section>
+
+	<section id="game">
+		<div id="playground">
+			<div id="paddleA" class="paddle"></div>
+			<div id="paddleB" class="paddle"></div>
+			<div id="ball1"></div>
+			<div id="ball2"></div>
+			<div id="ball3"></div>
+		</div>
+	</section>
+
+
+<script src="js/jquery-1.6.4.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
